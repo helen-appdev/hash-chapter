@@ -14,7 +14,8 @@ list_of_people = [
   { :name => "Carl", :age => 9 },
 ]
 
-p list_of_people[1]
-
-#list_of_people.each do |byage|
-#  if list_of_people[byage]
+list_of_people.each do |byage|
+if byage[:age] >= 16
+    p byage[:name] 
+end
+end
